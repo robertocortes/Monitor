@@ -1,7 +1,7 @@
 Project::Application.routes.draw do
   devise_for :users
 
-  root :to => "aplicacion#index"
+  #root :to => "aplicacion#index"
 
   resources :aplicacions 
 

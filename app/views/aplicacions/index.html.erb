@@ -28,4 +28,6 @@
 
 <br />
 
-<%= link_to 'New Aplicacion', new_aplicacion_path %>
+<% if current_user.is? :admin %>
+  <%= link_to 'New Aplicacion', new_aplicacion_path %>
+<% end %>
