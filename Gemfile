@@ -7,6 +7,7 @@ gem 'rails', '3.0.1'
 
 gem 'pg'
 gem 'devise', '1.1.rc0'
+gem 'dynamic_form'
 
 # Use unicorn as the web server
 # gem 'unicorn'
