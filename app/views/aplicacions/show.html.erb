@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre camara:</b>
+  <%= @aplicacion.nombre_camara %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @aplicacion.ip %>
+</p>
+
+<p>
+  <b>Ubicacion:</b>
+  <%= @aplicacion.ubicacion %>
+</p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @aplicacion.modelo %>
+</p>
+
+<p>
+  <b>Numero de serie:</b>
+  <%= @aplicacion.numero_de_serie %>
+</p>
+
+
+<%= link_to 'Edit', edit_aplicacion_path(@aplicacion) %> |
+<%= link_to 'Back', aplicacions_path %>

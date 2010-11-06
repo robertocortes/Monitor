@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre_camara: MyString
+  ip: MyString
+  ubicacion: MyString
+  modelo: MyString
+  numero_de_serie: MyString
+
+two:
+  nombre_camara: MyString
+  ip: MyString
+  ubicacion: MyString
+  modelo: MyString
+  numero_de_serie: MyString

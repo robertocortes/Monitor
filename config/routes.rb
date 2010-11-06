@@ -1,4 +1,6 @@
 Project::Application.routes.draw do
+  resources :aplicacions
+
   get "tesina/paginaPrincipal"
 
   # The priority is based upon order of creation:

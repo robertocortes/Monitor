@@ -1,0 +1,31 @@
+<h1>Listing aplicacions</h1>
+
+<table>
+  <tr>
+    <th>Nombre camara</th>
+    <th>Ip</th>
+    <th>Ubicacion</th>
+    <th>Modelo</th>
+    <th>Numero de serie</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @aplicacions.each do |aplicacion| %>
+  <tr>
+    <td><%= aplicacion.nombre_camara %></td>
+    <td><%= aplicacion.ip %></td>
+    <td><%= aplicacion.ubicacion %></td>
+    <td><%= aplicacion.modelo %></td>
+    <td><%= aplicacion.numero_de_serie %></td>
+    <td><%= link_to 'Show', aplicacion %></td>
+    <td><%= link_to 'Edit', edit_aplicacion_path(aplicacion) %></td>
+    <td><%= link_to 'Destroy', aplicacion, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Aplicacion', new_aplicacion_path %>
