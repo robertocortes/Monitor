@@ -1,6 +1,9 @@
 class AplicacionsController < ApplicationController
   # GET /aplicacions
   # GET /aplicacions.xml
+  
+  before_filter :authenticate_user!
+
   def index
     @aplicacions = Aplicacion.all
 
