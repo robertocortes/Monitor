@@ -1,9 +1,9 @@
 Project::Application.routes.draw do
   devise_for :users
 
-  resources :aplicacions
+  root :to => "aplicacion#index"
 
- # root :to => "tesina/paginaPrincipal"
+  resources :aplicacions 
 
   get "tesina/paginaPrincipal"
 
